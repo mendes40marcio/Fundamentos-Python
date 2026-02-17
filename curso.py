@@ -1,0 +1,5 @@
+nome = input('Informe o seu nome:').strip()
+partes = nome.split()
+print(partes)
+print(partes[0])
+print(partes[-1])

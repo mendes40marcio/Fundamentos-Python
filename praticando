@@ -1,0 +1,17 @@
+ano_atual = int(input('Digite o ano atual: '))
+continuar = 'S'
+
+while continuar == 'S':
+    ano_nasc = int(input('Agora informe o ano de nascimento: '))
+    idade = ano_atual - ano_nasc
+
+    if idade >= 18:
+        print(f'Sua idade é {idade}')
+        print('Apto a fazer sua habilitação')
+    else:
+        print(f'Sua idade é {idade}')
+        print('Menor de idade. Inapto a fazer habilitação')
+
+    continuar = input('Deseja verificar novamente? [S/N]: ').upper()
+
+print('Programa encerrado.')
