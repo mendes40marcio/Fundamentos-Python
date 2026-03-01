@@ -5,8 +5,8 @@ while True:
     try:
         altura = float(input('Informe a sua altura:'))
         peso = float(input('Agora digite o seu peso:'))
-        imc  = (altura**2)/peso
-        print(f'Antonella seu peso é {imc:.2f}')
+        imc  = peso/(altura**2)
+        print(f'Antonella seu IMC é {imc:.2f}')
 
         break
     
